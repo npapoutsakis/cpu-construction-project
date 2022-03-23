@@ -44,8 +44,20 @@ signal early_zero : STD_LOGIC;
 signal early_cout : STD_LOGIC;
 signal early_ovf : STD_LOGIC;
 
-begin
+signal addALU: STD_LOGIC_VECTOR (32 downto 0) := (others=> '0');
+signal subALU: STD_LOGIC_VECTOR (32 downto 0) := (others=> '0');
 
+signal inputA : STD_LOGIC_VECTOR (32 downto 0) := (others=> '0');
+signal inputB : STD_LOGIC_VECTOR (32 downto 0) := (others=> '0');
+
+begin
+	
+	inputA(31 downto 0) <= A(31 downto 0);
+	inputB(31 downto 0) <= B(31 downto 0);	
+	
+	addALU <= inputA + inputB; 
+	subALU <= inputA - inputB;
+	
 	process (A, B, Op) is
 	begin 
 		if Op = "0010" then
@@ -81,5 +93,26 @@ begin
 		end if;
 	end process;
 	
+	
+	Output <= addALU(31 downto 0) when Op = "0000" else
+			  subALU(31 downto 0) when Op = "0001" else
+			  early_output;	
+	
+	early_ovf <= '1' when ((inputA(31) = inputB(31)) and (addALU(31) /= inputA(31)) and (Op = "0000")) else 
+				 '1' when ((inputA(31) /= inputB(31)) and (subALU(31) = inputB(31)) and (Op = "0001")) else
+				 '0';
+	Ovf <= early_ovf;
+	
+	early_cout <= addALU(32) when Op = "0000" and early_ovf /= '1' else
+			      subALU(32) when Op = "0001" and early_ovf /= '1' else
+			      '0';
+	Cout <= early_cout;
+	
+	early_zero <= '1' when addALU(31 downto 0)= 0 and Op = "0000" else
+				  '1' when subALU(31 downto 0)= 0 and Op = "0001" else
+				  '1' when early_output = 0 and Op /= "0000" and Op /= "0001" else
+				  '0';
+	
+	Zero <= early_zero;
 	
 end Behavioral;
