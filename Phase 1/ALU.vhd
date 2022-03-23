@@ -94,25 +94,25 @@ begin
 	end process;
 	
 	
-	Output <= addALU(31 downto 0) when Op = "0000" else
-			  subALU(31 downto 0) when Op = "0001" else
-			  early_output;	
+	Output <= addALU(31 downto 0) after 10ns when Op = "0000" else
+			  subALU(31 downto 0) after 10ns when Op = "0001" else
+			  early_output after 10ns;	
 	
 	early_ovf <= '1' when ((inputA(31) = inputB(31)) and (addALU(31) /= inputA(31)) and (Op = "0000")) else 
 				 '1' when ((inputA(31) /= inputB(31)) and (subALU(31) = inputB(31)) and (Op = "0001")) else
 				 '0';
-	Ovf <= early_ovf;
+	Ovf <= early_ovf after 10ns;
 	
 	early_cout <= addALU(32) when Op = "0000" and early_ovf /= '1' else
 			      subALU(32) when Op = "0001" and early_ovf /= '1' else
 			      '0';
-	Cout <= early_cout;
+	Cout <= early_cout after 10ns;
 	
 	early_zero <= '1' when addALU(31 downto 0)= 0 and Op = "0000" else
 				  '1' when subALU(31 downto 0)= 0 and Op = "0001" else
 				  '1' when early_output = 0 and Op /= "0000" and Op /= "0001" else
 				  '0';
 	
-	Zero <= early_zero;
+	Zero <= early_zero after 10ns;
 	
 end Behavioral;
