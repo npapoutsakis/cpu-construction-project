@@ -20,9 +20,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.Array_Variable.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -45,6 +42,7 @@ architecture Behavioral of RF is
 
 signal regToMux : number_of_32_bits;
 signal decoder_output: STD_LOGIC_VECTOR (31 downto 0);
+signal and_gate_result: STD_LOGIC_VECTOR (31 downto 0);
 
 component Decoder5to32 is
     Port ( DecoderInput : in  STD_LOGIC_VECTOR (4 downto 0);
@@ -66,7 +64,12 @@ component Register32Bit is
 end component;
 
 begin
-
+	
+	Decoder: Decoder5to32 port map( DecoderInput => Awr,
+                                   DecoderOutput => decoder_output	
+											 );
+	
+	
 	Register_R0: Register32Bit port map( CLK => Clk,
 													 RST => '1',
 													 WE => '0',
@@ -74,22 +77,20 @@ begin
 													 Dataout => regToMux(0)
 													);
 	
+	
 	Register_Generation: 
 				for i in 1 to 31 generate
+					
+					and_gate_result(i) <= (decoder_output(i) and WrEn) after 2 ns;
+					
 					Register_Ri: Register32Bit port map( CLK => Clk,
 																	 RST => Rst,
-																	 WE => (decoder_output(i) and WrEn),
+																	 WE => and_gate_result(i),
 																	 Datain => Din,
 																	 Dataout => regToMux(i)
 																   );
 				
 				end generate;
-	
-	
-	Decoder: Decoder5to32 port map( DecoderInput => Awr,
-                                   DecoderOutput => decoder_output	
-											 );
-	
 	
 	
 	Mux_No1: Mux32to1 port map( Input => regToMux,
@@ -102,7 +103,7 @@ begin
                                Sel => Ard2,	
 										 Dout => Dout2
 										); 
-
+										
 
 end Behavioral;
 
