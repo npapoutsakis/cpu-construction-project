@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="HRY302-Phase02" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/DECSTAGE - Behavioral C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|DECSTAGE.vhd</ClosedNode>
+         <ClosedNode>/EXSTAGE - Behavioral C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|EXSTAGE.vhd</ClosedNode>
+         <ClosedNode>/IFSTAGE - Behavioral C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|IFSTAGE.vhd</ClosedNode>
+         <ClosedNode>/RF - Behavioral C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|RF.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>MEMSTAGE - Behavioral (C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase02/MEMSTAGE.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000124000000020000000000000000000000000200000064ffffffff000000810000000300000002000001240000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>MEMSTAGE - Behavioral (C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase02/MEMSTAGE.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000184000000010000000100000000000000000000000064ffffffff000000810000000000000001000001840000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>RAM.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Check Syntax</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000193000000010000000100000000000000000000000064ffffffff000000810000000000000001000001930000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Check Syntax</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/DECSTAGE - Behavioral C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|DECSTAGE.vhd/Register_File - RF - Behavioral</ClosedNode>
+         <ClosedNode>/IFSTAGE - Behavioral C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|IFSTAGE.vhd</ClosedNode>
+         <ClosedNode>/IFSTAGE_TB - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|IFSTAGE_TB.vhd</ClosedNode>
+         <ClosedNode>/IFSTAGE_TB - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|IFSTAGE_TB.vhd/uut - IFSTAGE - Behavioral</ClosedNode>
+         <ClosedNode>/Ifstage_test - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|Ifstage_test.vhd</ClosedNode>
+         <ClosedNode>/Ifstage_test - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|Ifstage_test.vhd/uut - IFSTAGE - Behavioral</ClosedNode>
+         <ClosedNode>/Imm_Add_TestBench - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|Imm_Add_TestBench.vhd</ClosedNode>
+         <ClosedNode>/cloud_test - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|cloud_test.vhd</ClosedNode>
+         <ClosedNode>/decstage_test - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|decstage_test.vhd</ClosedNode>
+         <ClosedNode>/decstage_test - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|decstage_test.vhd/uut - DECSTAGE - Behavioral</ClosedNode>
+         <ClosedNode>/decstage_test - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|decstage_test.vhd/uut - DECSTAGE - Behavioral/Register_File - RF - Behavioral</ClosedNode>
+         <ClosedNode>/exstage_testbench - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|exstage_testbench.vhd</ClosedNode>
+         <ClosedNode>/plus4_test - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|plus4_test.vhd</ClosedNode>
+         <ClosedNode>/ram_testbench - behavior C:|Users|Nick-PC|Documents|VHDL|HRY302-Phase02|ram_testbench.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>uut2 - RAM - syn (C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase02/RAM.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017b0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>uut2 - RAM - syn (C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase02/RAM.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000159000000010000000100000000000000000000000064ffffffff000000810000000000000001000001590000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000193000000010000000100000000000000000000000064ffffffff000000810000000000000001000001930000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+</Project>

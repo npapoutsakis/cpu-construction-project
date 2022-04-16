@@ -1,0 +1,28 @@
+Command line:
+   RF_TestBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49856
+
+Fri Apr 08 01:11:36 2022
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5154.02 Meg
+
+ Total Signals          : 194
+ Total Nets             : 1300
+ Total Signal Drivers   : 76
+ Total Blocks           : 73
+ Total Primitive Blocks : 40
+ Total Processes        : 71
+ Total Traceable Variables  : 47
+ Total Scalar Nets and Variables : 1833
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 4682.16 Meg
+
+Fri Apr 08 01:14:49 2022
+

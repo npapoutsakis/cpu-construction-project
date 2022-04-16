@@ -1,0 +1,62 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/proc_sc_testbench_isim_beh.exe" -prj "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/proc_sc_testbench_beh.prj" "work.proc_sc_testbench" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/Array_Variable.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/Register32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/Mux32to1.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/Decoder5to32.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/RF.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/plus4module.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/Mux2x1_5Bits.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/Mux2to1.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/dec_encoder.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/cloud.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/addition_module.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/MEMSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/IFSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/EXSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/DECSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/RAM.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/DATAPATH.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/CONTROL.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/PROC_SC.vhd" into library work
+Parsing VHDL file "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/proc_sc_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture syn of entity RAM [ram_default]
+Compiling package numeric_std
+Compiling architecture behavioral of entity Register32Bit [register32bit_default]
+Compiling architecture behavioral of entity plus4module [plus4module_default]
+Compiling architecture behavioral of entity addition_module [addition_module_default]
+Compiling architecture behavioral of entity Mux2to1 [mux2to1_default]
+Compiling architecture behavioral of entity IFSTAGE [ifstage_default]
+Compiling package array_variable
+Compiling architecture behavioral of entity Decoder5to32 [decoder5to32_default]
+Compiling architecture behavioral of entity Mux32to1 [mux32to1_default]
+Compiling architecture behavioral of entity RF [rf_default]
+Compiling architecture behavioral of entity Mux2x1_5Bits [mux2x1_5bits_default]
+Compiling architecture behavioral of entity dec_encoder [dec_encoder_default]
+Compiling architecture behavioral of entity cloud [cloud_default]
+Compiling architecture behavioral of entity DECSTAGE [decstage_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity EXSTAGE [exstage_default]
+Compiling architecture behavioral of entity MEMSTAGE [memstage_default]
+Compiling architecture behavioral of entity DATAPATH [datapath_default]
+Compiling architecture behavioral of entity CONTROL [control_default]
+Compiling architecture behavioral of entity PROC_SC [proc_sc_default]
+Compiling architecture behavior of entity proc_sc_testbench
+Time Resolution for simulation is 1ps.
+Waiting for 20 sub-compilation(s) to finish...
+Compiled 47 VHDL Units
+Built simulation executable C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/proc_sc_testbench_isim_beh.exe
+Fuse Memory Usage: 46004 KB
+Fuse CPU Usage: 1639 ms

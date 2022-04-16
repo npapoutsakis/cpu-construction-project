@@ -1,0 +1,936 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: DATAPATH.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DATAPATH.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DATAPATH"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : DATAPATH
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Array_Variable.vhd" in Library work.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Decoder5to32.vhd" in Library work.
+Architecture behavioral of Entity decoder5to32 is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Register32Bit.vhd" in Library work.
+Architecture behavioral of Entity register32bit is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Mux32to1.vhd" in Library work.
+Architecture behavioral of Entity mux32to1 is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Mux2to1.vhd" in Library work.
+Architecture behavioral of Entity mux2to1 is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/RF.vhd" in Library work.
+Architecture behavioral of Entity rf is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Mux2x1_5Bits.vhd" in Library work.
+Architecture behavioral of Entity mux2x1_5bits is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/dec_encoder.vhd" in Library work.
+Architecture behavioral of Entity dec_encoder is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/cloud.vhd" in Library work.
+Architecture behavioral of Entity cloud is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/plus4module.vhd" in Library work.
+Architecture behavioral of Entity plus4module is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/addition_module.vhd" in Library work.
+Architecture behavioral of Entity addition_module is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/IFSTAGE.vhd" in Library work.
+Architecture behavioral of Entity ifstage is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/DECSTAGE.vhd" in Library work.
+Architecture behavioral of Entity decstage is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/EXSTAGE.vhd" in Library work.
+Architecture behavioral of Entity exstage is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/MEMSTAGE.vhd" in Library work.
+Architecture behavioral of Entity memstage is up to date.
+Compiling vhdl file "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/DATAPATH.vhd" in Library work.
+Entity <datapath> compiled.
+Entity <datapath> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <DATAPATH> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IFSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DECSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <EXSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MEMSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Register32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <plus4module> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <addition_module> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RF> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2x1_5Bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dec_encoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cloud> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decoder5to32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Register32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux32to1> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <DATAPATH> in library <work> (Architecture <behavioral>).
+Entity <DATAPATH> analyzed. Unit <DATAPATH> generated.
+
+Analyzing Entity <IFSTAGE> in library <work> (Architecture <behavioral>).
+Entity <IFSTAGE> analyzed. Unit <IFSTAGE> generated.
+
+Analyzing Entity <Register32Bit> in library <work> (Architecture <behavioral>).
+Entity <Register32Bit> analyzed. Unit <Register32Bit> generated.
+
+Analyzing Entity <plus4module> in library <work> (Architecture <behavioral>).
+Entity <plus4module> analyzed. Unit <plus4module> generated.
+
+Analyzing Entity <addition_module> in library <work> (Architecture <behavioral>).
+Entity <addition_module> analyzed. Unit <addition_module> generated.
+
+Analyzing Entity <Mux2to1> in library <work> (Architecture <behavioral>).
+Entity <Mux2to1> analyzed. Unit <Mux2to1> generated.
+
+Analyzing Entity <DECSTAGE> in library <work> (Architecture <behavioral>).
+Entity <DECSTAGE> analyzed. Unit <DECSTAGE> generated.
+
+Analyzing Entity <RF> in library <work> (Architecture <behavioral>).
+Entity <RF> analyzed. Unit <RF> generated.
+
+Analyzing Entity <Decoder5to32> in library <work> (Architecture <behavioral>).
+Entity <Decoder5to32> analyzed. Unit <Decoder5to32> generated.
+
+Analyzing Entity <Mux32to1> in library <work> (Architecture <behavioral>).
+Entity <Mux32to1> analyzed. Unit <Mux32to1> generated.
+
+Analyzing Entity <Mux2x1_5Bits> in library <work> (Architecture <behavioral>).
+Entity <Mux2x1_5Bits> analyzed. Unit <Mux2x1_5Bits> generated.
+
+Analyzing Entity <dec_encoder> in library <work> (Architecture <behavioral>).
+Entity <dec_encoder> analyzed. Unit <dec_encoder> generated.
+
+Analyzing Entity <cloud> in library <work> (Architecture <behavioral>).
+Entity <cloud> analyzed. Unit <cloud> generated.
+
+Analyzing Entity <EXSTAGE> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/EXSTAGE.vhd" line 65: Unconnected output port 'Cout' of component 'ALU'.
+WARNING:Xst:753 - "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/EXSTAGE.vhd" line 65: Unconnected output port 'Ovf' of component 'ALU'.
+Entity <EXSTAGE> analyzed. Unit <EXSTAGE> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <MEMSTAGE> in library <work> (Architecture <behavioral>).
+Entity <MEMSTAGE> analyzed. Unit <MEMSTAGE> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MEMSTAGE>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/MEMSTAGE.vhd".
+WARNING:Xst:1305 - Output <MM_Addr<31:13>> is never assigned. Tied to value 0000000000000000000.
+WARNING:Xst:1305 - Output <MM_Addr<1:0>> is never assigned. Tied to value 00.
+WARNING:Xst:646 - Signal <early_mem<31:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <early_mem<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <early_mem>.
+    Found 32-bit 4-to-1 multiplexer for signal <load_data>.
+    Found 32-bit 4-to-1 multiplexer for signal <store_data>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  64 Multiplexer(s).
+Unit <MEMSTAGE> synthesized.
+
+
+Synthesizing Unit <Register32Bit>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Register32Bit.vhd".
+    Found 32-bit register for signal <Dataout>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Register32Bit> synthesized.
+
+
+Synthesizing Unit <plus4module>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/plus4module.vhd".
+    Found 32-bit adder for signal <output>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <plus4module> synthesized.
+
+
+Synthesizing Unit <addition_module>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/addition_module.vhd".
+WARNING:Xst:647 - Input <PCImmed<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit adder for signal <result>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addition_module> synthesized.
+
+
+Synthesizing Unit <Mux2to1>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Mux2to1.vhd".
+Unit <Mux2to1> synthesized.
+
+
+Synthesizing Unit <Mux2x1_5Bits>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Mux2x1_5Bits.vhd".
+Unit <Mux2x1_5Bits> synthesized.
+
+
+Synthesizing Unit <dec_encoder>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/dec_encoder.vhd".
+Unit <dec_encoder> synthesized.
+
+
+Synthesizing Unit <cloud>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/cloud.vhd".
+    Found 30-bit 4-to-1 multiplexer for signal <CloudResult<31:2>>.
+    Summary:
+	inferred  30 Multiplexer(s).
+Unit <cloud> synthesized.
+
+
+Synthesizing Unit <Decoder5to32>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Decoder5to32.vhd".
+    Found 1-of-32 decoder for signal <early_output>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <Decoder5to32> synthesized.
+
+
+Synthesizing Unit <Mux32to1>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/Mux32to1.vhd".
+    Found 32-bit 32-to-1 multiplexer for signal <mux_early_output>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <Mux32to1> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/ALU.vhd".
+WARNING:Xst:653 - Signal <inputB<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <inputA<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:737 - Found 32-bit latch for signal <early_output>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit 4-to-1 multiplexer for signal <Output>.
+    Found 33-bit adder for signal <addALU>.
+    Found 1-bit xor2 for signal <early_ovf$xor0000> created at line 100.
+    Found 1-bit xor2 for signal <early_ovf$xor0001> created at line 100.
+    Found 1-bit xor2 for signal <early_ovf$xor0002> created at line 100.
+    Found 33-bit subtractor for signal <subALU>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <IFSTAGE>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/IFSTAGE.vhd".
+Unit <IFSTAGE> synthesized.
+
+
+Synthesizing Unit <EXSTAGE>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/EXSTAGE.vhd".
+Unit <EXSTAGE> synthesized.
+
+
+Synthesizing Unit <RF>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/RF.vhd".
+WARNING:Xst:646 - Signal <decoder_output<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <and_gate_result<0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <RF> synthesized.
+
+
+Synthesizing Unit <DECSTAGE>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/DECSTAGE.vhd".
+Unit <DECSTAGE> synthesized.
+
+
+Synthesizing Unit <DATAPATH>.
+    Related source file is "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/DATAPATH.vhd".
+Unit <DATAPATH> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 3
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+# Registers                                            : 33
+ 32-bit register                                       : 33
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Multiplexers                                         : 35
+ 1-bit 4-to-1 multiplexer                              : 30
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+# Decoders                                             : 1
+ 1-of-32 decoder                                       : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <Dataout_31> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_30> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_29> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_28> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_27> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_26> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_25> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_24> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_23> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_22> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_21> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_20> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_19> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_18> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_17> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_16> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_15> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_14> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_13> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_12> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_11> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_10> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_9> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_8> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_7> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_6> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_5> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_4> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_3> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_2> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_1> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Dataout_0> (without init value) has a constant value of 0 in block <Register_R0>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 13-bit adder                                          : 1
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+# Registers                                            : 1056
+ Flip-Flops                                            : 1056
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Multiplexers                                         : 35
+ 1-bit 4-to-1 multiplexer                              : 30
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+# Decoders                                             : 1
+ 1-of-32 decoder                                       : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<14>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<10>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<18>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<17>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<9>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<28>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<26>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<16>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<8>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<31>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<22>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<11>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<27>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<12>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<20>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<25>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<13>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<30>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<19>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<15>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<23>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<21>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<24>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: mem_dataOut_signal<29>.
+
+Optimizing unit <DATAPATH> ...
+
+Optimizing unit <Register32Bit> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <RF> ...
+WARNING:Xst:1710 - FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_15> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_16> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_17> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_18> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_19> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_20> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_21> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_22> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_23> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_24> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_25> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_26> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_27> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_28> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_29> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_30> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_31> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <If_Stage/PC_Register/Dataout_1> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <If_Stage/PC_Register/Dataout_0> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_0> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_1> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_2> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_3> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_4> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_5> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_6> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_7> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_8> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_9> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_10> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_11> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_12> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_13> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dec_Stage/Register_File/Register_R0/Dataout_14> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DATAPATH, actual ratio is 124.
+Optimizing block <DATAPATH> to meet ratio 100 (+ 5) of 960 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <DATAPATH>, final ratio is 125.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1022
+ Flip-Flops                                            : 1022
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DATAPATH.ngr
+Top Level Output File Name         : DATAPATH
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 176
+
+Cell Usage :
+# BELS                             : 2899
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 29
+#      LUT2                        : 59
+#      LUT3                        : 1118
+#      LUT4                        : 451
+#      LUT4_L                      : 1
+#      MUXCY                       : 120
+#      MUXF5                       : 545
+#      MUXF6                       : 256
+#      MUXF7                       : 128
+#      MUXF8                       : 64
+#      VCC                         : 1
+#      XORCY                       : 124
+# FlipFlops/Latches                : 1054
+#      FDRE                        : 1022
+#      LD                          : 32
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 175
+#      IBUF                        : 77
+#      OBUF                        : 98
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                     1202  out of    960   125% (*) 
+ Number of Slice Flip Flops:           1054  out of   1920    54%  
+ Number of 4 input LUTs:               1660  out of   1920    86%  
+ Number of IOs:                         176
+ Number of bonded IOBs:                 176  out of     83   212% (*) 
+ Number of GCLKs:                         2  out of     24     8%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------+---------------------------------------------+-------+
+Clock Signal                                                                       | Clock buffer(FF name)                       | Load  |
+-----------------------------------------------------------------------------------+---------------------------------------------+-------+
+D_CLK                                                                              | BUFGP                                       | 1022  |
+Ex_Stage/ALU_Module/early_output_or00001(Ex_Stage/ALU_Module/early_output_or0000:O)| BUFG(*)(Ex_Stage/ALU_Module/early_output_31)| 32    |
+-----------------------------------------------------------------------------------+---------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.326ns (Maximum Frequency: 107.232MHz)
+   Minimum input arrival time before clock: 12.609ns
+   Maximum output required time after clock: 15.406ns
+   Maximum combinational path delay: 18.689ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'D_CLK'
+  Clock period: 9.326ns (frequency: 107.232MHz)
+  Total number of paths / destination ports: 3235997 / 1022
+-------------------------------------------------------------------------
+Delay:               9.326ns (Levels of Logic = 40)
+  Source:            Dec_Stage/Register_File/Register_Generation[2].Register_Ri/Dataout_0 (FF)
+  Destination:       Dec_Stage/Register_File/Register_Generation[1].Register_Ri/Dataout_31 (FF)
+  Source Clock:      D_CLK rising
+  Destination Clock: D_CLK rising
+
+  Data Path: Dec_Stage/Register_File/Register_Generation[2].Register_Ri/Dataout_0 to Dec_Stage/Register_File/Register_Generation[1].Register_Ri/Dataout_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.514   0.449  Dec_Stage/Register_File/Register_Generation[2].Register_Ri/Dataout_0 (Dec_Stage/Register_File/Register_Generation[2].Register_Ri/Dataout_0)
+     LUT3:I1->O            1   0.612   0.000  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_93 (Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_93)
+     MUXF5:I1->O           1   0.278   0.000  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_8_f5 (Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_8_f5)
+     MUXF6:I0->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_6_f6 (Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_6_f6)
+     MUXF7:I0->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_4_f7 (Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_4_f7)
+     MUXF8:I0->O           6   0.451   0.572  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_2_f8 (data_from_rfA<0>)
+     LUT4:I3->O            1   0.612   0.000  Ex_Stage/ALU_Module/Msub_subALU_lut<0> (Ex_Stage/ALU_Module/Msub_subALU_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<0> (Ex_Stage/ALU_Module/Msub_subALU_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<1> (Ex_Stage/ALU_Module/Msub_subALU_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<2> (Ex_Stage/ALU_Module/Msub_subALU_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<3> (Ex_Stage/ALU_Module/Msub_subALU_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<4> (Ex_Stage/ALU_Module/Msub_subALU_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<5> (Ex_Stage/ALU_Module/Msub_subALU_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<6> (Ex_Stage/ALU_Module/Msub_subALU_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<7> (Ex_Stage/ALU_Module/Msub_subALU_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<8> (Ex_Stage/ALU_Module/Msub_subALU_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<9> (Ex_Stage/ALU_Module/Msub_subALU_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<10> (Ex_Stage/ALU_Module/Msub_subALU_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<11> (Ex_Stage/ALU_Module/Msub_subALU_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<12> (Ex_Stage/ALU_Module/Msub_subALU_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<13> (Ex_Stage/ALU_Module/Msub_subALU_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<14> (Ex_Stage/ALU_Module/Msub_subALU_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<15> (Ex_Stage/ALU_Module/Msub_subALU_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<16> (Ex_Stage/ALU_Module/Msub_subALU_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<17> (Ex_Stage/ALU_Module/Msub_subALU_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<18> (Ex_Stage/ALU_Module/Msub_subALU_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<19> (Ex_Stage/ALU_Module/Msub_subALU_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<20> (Ex_Stage/ALU_Module/Msub_subALU_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<21> (Ex_Stage/ALU_Module/Msub_subALU_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<22> (Ex_Stage/ALU_Module/Msub_subALU_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<23> (Ex_Stage/ALU_Module/Msub_subALU_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<24> (Ex_Stage/ALU_Module/Msub_subALU_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<25> (Ex_Stage/ALU_Module/Msub_subALU_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<26> (Ex_Stage/ALU_Module/Msub_subALU_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<27> (Ex_Stage/ALU_Module/Msub_subALU_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<28> (Ex_Stage/ALU_Module/Msub_subALU_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<29> (Ex_Stage/ALU_Module/Msub_subALU_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<30> (Ex_Stage/ALU_Module/Msub_subALU_cy<30>)
+     XORCY:CI->O           2   0.699   0.410  Ex_Stage/ALU_Module/Msub_subALU_xor<31> (Ex_Stage/ALU_Module/subALU<31>)
+     LUT4:I2->O            1   0.612   0.357  Dec_Stage/Mux32Bit/mux2to1_output<31>13 (Dec_Stage/Mux32Bit/mux2to1_output<31>13)
+     MUXF5:S->O           31   0.641   0.000  Dec_Stage/Mux32Bit/mux2to1_output<31>39 (Dec_Stage/big_32bit_mux_out<31>)
+     FDRE:D                    0.268          Dec_Stage/Register_File/Register_Generation[31].Register_Ri/Dataout_31
+    ----------------------------------------
+    Total                      9.326ns (7.538ns logic, 1.788ns route)
+                                       (80.8% logic, 19.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_CLK'
+  Total number of paths / destination ports: 6080009 / 2074
+-------------------------------------------------------------------------
+Offset:              12.609ns (Levels of Logic = 42)
+  Source:            D_RF_B_Selection (PAD)
+  Destination:       Dec_Stage/Register_File/Register_Generation[1].Register_Ri/Dataout_31 (FF)
+  Destination Clock: D_CLK rising
+
+  Data Path: D_RF_B_Selection to Dec_Stage/Register_File/Register_Generation[1].Register_Ri/Dataout_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            37   1.106   1.226  D_RF_B_Selection_IBUF (D_RF_B_Selection_IBUF)
+     LUT3:I0->O          480   0.612   1.345  Dec_Stage/Mux5bit/outt<0>1 (Dec_Stage/small_mux_out<0>)
+     LUT3:I0->O            1   0.612   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_6 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_6)
+     MUXF5:I1->O           1   0.278   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_5_f5 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_5_f5)
+     MUXF6:I1->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_4_f6 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_4_f6)
+     MUXF7:I1->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_3_f7 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_3_f7)
+     MUXF8:I1->O           4   0.451   0.529  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_2_f8 (data_from_rfB<0>)
+     LUT4:I2->O            1   0.612   0.000  Ex_Stage/ALU_Module/Msub_subALU_lut<0> (Ex_Stage/ALU_Module/Msub_subALU_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<0> (Ex_Stage/ALU_Module/Msub_subALU_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<1> (Ex_Stage/ALU_Module/Msub_subALU_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<2> (Ex_Stage/ALU_Module/Msub_subALU_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<3> (Ex_Stage/ALU_Module/Msub_subALU_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<4> (Ex_Stage/ALU_Module/Msub_subALU_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<5> (Ex_Stage/ALU_Module/Msub_subALU_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<6> (Ex_Stage/ALU_Module/Msub_subALU_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<7> (Ex_Stage/ALU_Module/Msub_subALU_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<8> (Ex_Stage/ALU_Module/Msub_subALU_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<9> (Ex_Stage/ALU_Module/Msub_subALU_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<10> (Ex_Stage/ALU_Module/Msub_subALU_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<11> (Ex_Stage/ALU_Module/Msub_subALU_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<12> (Ex_Stage/ALU_Module/Msub_subALU_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<13> (Ex_Stage/ALU_Module/Msub_subALU_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<14> (Ex_Stage/ALU_Module/Msub_subALU_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<15> (Ex_Stage/ALU_Module/Msub_subALU_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<16> (Ex_Stage/ALU_Module/Msub_subALU_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<17> (Ex_Stage/ALU_Module/Msub_subALU_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<18> (Ex_Stage/ALU_Module/Msub_subALU_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<19> (Ex_Stage/ALU_Module/Msub_subALU_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<20> (Ex_Stage/ALU_Module/Msub_subALU_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<21> (Ex_Stage/ALU_Module/Msub_subALU_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<22> (Ex_Stage/ALU_Module/Msub_subALU_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<23> (Ex_Stage/ALU_Module/Msub_subALU_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<24> (Ex_Stage/ALU_Module/Msub_subALU_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<25> (Ex_Stage/ALU_Module/Msub_subALU_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<26> (Ex_Stage/ALU_Module/Msub_subALU_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<27> (Ex_Stage/ALU_Module/Msub_subALU_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<28> (Ex_Stage/ALU_Module/Msub_subALU_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<29> (Ex_Stage/ALU_Module/Msub_subALU_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<30> (Ex_Stage/ALU_Module/Msub_subALU_cy<30>)
+     XORCY:CI->O           2   0.699   0.410  Ex_Stage/ALU_Module/Msub_subALU_xor<31> (Ex_Stage/ALU_Module/subALU<31>)
+     LUT4:I2->O            1   0.612   0.357  Dec_Stage/Mux32Bit/mux2to1_output<31>13 (Dec_Stage/Mux32Bit/mux2to1_output<31>13)
+     MUXF5:S->O           31   0.641   0.000  Dec_Stage/Mux32Bit/mux2to1_output<31>39 (Dec_Stage/big_32bit_mux_out<31>)
+     FDRE:D                    0.268          Dec_Stage/Register_File/Register_Generation[31].Register_Ri/Dataout_31
+    ----------------------------------------
+    Total                     12.609ns (8.742ns logic, 3.867ns route)
+                                       (69.3% logic, 30.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Ex_Stage/ALU_Module/early_output_or00001'
+  Total number of paths / destination ports: 15300 / 32
+-------------------------------------------------------------------------
+Offset:              11.128ns (Levels of Logic = 11)
+  Source:            D_RF_B_Selection (PAD)
+  Destination:       Ex_Stage/ALU_Module/early_output_0 (LATCH)
+  Destination Clock: Ex_Stage/ALU_Module/early_output_or00001 falling
+
+  Data Path: D_RF_B_Selection to Ex_Stage/ALU_Module/early_output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            37   1.106   1.226  D_RF_B_Selection_IBUF (D_RF_B_Selection_IBUF)
+     LUT3:I0->O          480   0.612   1.345  Dec_Stage/Mux5bit/outt<0>1 (Dec_Stage/small_mux_out<0>)
+     LUT3:I0->O            1   0.612   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_6 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_6)
+     MUXF5:I1->O           1   0.278   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_5_f5 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_5_f5)
+     MUXF6:I1->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_4_f6 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_4_f6)
+     MUXF7:I1->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_3_f7 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_3_f7)
+     MUXF8:I1->O           4   0.451   0.502  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_2_f8 (data_from_rfB<0>)
+     LUT4:I3->O            3   0.612   0.481  Ex_Stage/Mux2x1/mux2to1_output<0>1 (Ex_Stage/mux_output<0>)
+     LUT3:I2->O            1   0.612   0.387  Ex_Stage/ALU_Module/early_output_mux0009<0>38_SW1 (N191)
+     LUT4:I2->O            1   0.612   0.509  Ex_Stage/ALU_Module/early_output_mux0009<0>38 (Ex_Stage/ALU_Module/early_output_mux0009<0>38)
+     LUT3:I0->O            1   0.612   0.000  Ex_Stage/ALU_Module/early_output_mux0009<0>89 (Ex_Stage/ALU_Module/early_output_mux0009<0>)
+     LD:D                      0.268          Ex_Stage/ALU_Module/early_output_0
+    ----------------------------------------
+    Total                     11.128ns (6.677ns logic, 4.451ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_CLK'
+  Total number of paths / destination ports: 129982 / 74
+-------------------------------------------------------------------------
+Offset:              15.406ns (Levels of Logic = 34)
+  Source:            Dec_Stage/Register_File/Register_Generation[2].Register_Ri/Dataout_0 (FF)
+  Destination:       D_ALU_Zero (PAD)
+  Source Clock:      D_CLK rising
+
+  Data Path: Dec_Stage/Register_File/Register_Generation[2].Register_Ri/Dataout_0 to D_ALU_Zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.514   0.449  Dec_Stage/Register_File/Register_Generation[2].Register_Ri/Dataout_0 (Dec_Stage/Register_File/Register_Generation[2].Register_Ri/Dataout_0)
+     LUT3:I1->O            1   0.612   0.000  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_93 (Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_93)
+     MUXF5:I1->O           1   0.278   0.000  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_8_f5 (Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_8_f5)
+     MUXF6:I0->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_6_f6 (Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_6_f6)
+     MUXF7:I0->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_4_f7 (Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_4_f7)
+     MUXF8:I0->O           6   0.451   0.572  Dec_Stage/Register_File/Mux_No1/Mmux_mux_early_output_2_f8 (data_from_rfA<0>)
+     LUT4:I3->O            1   0.612   0.000  Ex_Stage/ALU_Module/Msub_subALU_lut<0> (Ex_Stage/ALU_Module/Msub_subALU_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<0> (Ex_Stage/ALU_Module/Msub_subALU_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<1> (Ex_Stage/ALU_Module/Msub_subALU_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<2> (Ex_Stage/ALU_Module/Msub_subALU_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<3> (Ex_Stage/ALU_Module/Msub_subALU_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<4> (Ex_Stage/ALU_Module/Msub_subALU_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<5> (Ex_Stage/ALU_Module/Msub_subALU_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<6> (Ex_Stage/ALU_Module/Msub_subALU_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<7> (Ex_Stage/ALU_Module/Msub_subALU_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<8> (Ex_Stage/ALU_Module/Msub_subALU_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<9> (Ex_Stage/ALU_Module/Msub_subALU_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<10> (Ex_Stage/ALU_Module/Msub_subALU_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<11> (Ex_Stage/ALU_Module/Msub_subALU_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<12> (Ex_Stage/ALU_Module/Msub_subALU_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<13> (Ex_Stage/ALU_Module/Msub_subALU_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<14> (Ex_Stage/ALU_Module/Msub_subALU_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<15> (Ex_Stage/ALU_Module/Msub_subALU_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<16> (Ex_Stage/ALU_Module/Msub_subALU_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<17> (Ex_Stage/ALU_Module/Msub_subALU_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<18> (Ex_Stage/ALU_Module/Msub_subALU_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<19> (Ex_Stage/ALU_Module/Msub_subALU_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<20> (Ex_Stage/ALU_Module/Msub_subALU_cy<20>)
+     XORCY:CI->O           2   0.699   0.532  Ex_Stage/ALU_Module/Msub_subALU_xor<21> (Ex_Stage/ALU_Module/subALU<21>)
+     LUT2:I0->O            1   0.612   0.509  Ex_Stage/ALU_Module/early_zero208 (Ex_Stage/ALU_Module/early_zero208)
+     LUT4:I0->O            1   0.612   0.360  Ex_Stage/ALU_Module/early_zero218 (Ex_Stage/ALU_Module/early_zero218)
+     LUT4:I3->O            1   0.612   0.387  Ex_Stage/ALU_Module/early_zero248 (Ex_Stage/ALU_Module/early_zero248)
+     LUT4:I2->O            1   0.612   0.509  Ex_Stage/ALU_Module/early_zero748_SW0 (N125)
+     LUT4:I0->O            1   0.612   0.357  Ex_Stage/ALU_Module/early_zero748 (D_ALU_Zero_OBUF)
+     OBUF:I->O                 3.169          D_ALU_Zero_OBUF (D_ALU_Zero)
+    ----------------------------------------
+    Total                     15.406ns (11.731ns logic, 3.675ns route)
+                                       (76.1% logic, 23.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Ex_Stage/ALU_Module/early_output_or00001'
+  Total number of paths / destination ports: 60 / 12
+-------------------------------------------------------------------------
+Offset:              9.295ns (Levels of Logic = 6)
+  Source:            Ex_Stage/ALU_Module/early_output_17 (LATCH)
+  Destination:       D_ALU_Zero (PAD)
+  Source Clock:      Ex_Stage/ALU_Module/early_output_or00001 falling
+
+  Data Path: Ex_Stage/ALU_Module/early_output_17 to D_ALU_Zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.588   0.532  Ex_Stage/ALU_Module/early_output_17 (Ex_Stage/ALU_Module/early_output_17)
+     LUT4:I0->O            1   0.612   0.509  Ex_Stage/ALU_Module/early_zero605 (Ex_Stage/ALU_Module/early_zero605)
+     LUT2:I0->O            1   0.612   0.360  Ex_Stage/ALU_Module/early_zero619 (Ex_Stage/ALU_Module/early_zero619)
+     LUT4:I3->O            1   0.612   0.360  Ex_Stage/ALU_Module/early_zero632_SW0 (N121)
+     LUT4:I3->O            1   0.612   0.360  Ex_Stage/ALU_Module/early_zero632 (Ex_Stage/ALU_Module/early_zero632)
+     LUT4:I3->O            1   0.612   0.357  Ex_Stage/ALU_Module/early_zero748 (D_ALU_Zero_OBUF)
+     OBUF:I->O                 3.169          D_ALU_Zero_OBUF (D_ALU_Zero)
+    ----------------------------------------
+    Total                      9.295ns (6.817ns logic, 2.478ns route)
+                                       (73.3% logic, 26.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 245121 / 45
+-------------------------------------------------------------------------
+Delay:               18.689ns (Levels of Logic = 36)
+  Source:            D_RF_B_Selection (PAD)
+  Destination:       D_ALU_Zero (PAD)
+
+  Data Path: D_RF_B_Selection to D_ALU_Zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            37   1.106   1.226  D_RF_B_Selection_IBUF (D_RF_B_Selection_IBUF)
+     LUT3:I0->O          480   0.612   1.345  Dec_Stage/Mux5bit/outt<0>1 (Dec_Stage/small_mux_out<0>)
+     LUT3:I0->O            1   0.612   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_6 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_6)
+     MUXF5:I1->O           1   0.278   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_5_f5 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_5_f5)
+     MUXF6:I1->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_4_f6 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_4_f6)
+     MUXF7:I1->O           1   0.451   0.000  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_3_f7 (Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_3_f7)
+     MUXF8:I1->O           4   0.451   0.529  Dec_Stage/Register_File/Mux_No2/Mmux_mux_early_output_2_f8 (data_from_rfB<0>)
+     LUT4:I2->O            1   0.612   0.000  Ex_Stage/ALU_Module/Msub_subALU_lut<0> (Ex_Stage/ALU_Module/Msub_subALU_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<0> (Ex_Stage/ALU_Module/Msub_subALU_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<1> (Ex_Stage/ALU_Module/Msub_subALU_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<2> (Ex_Stage/ALU_Module/Msub_subALU_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<3> (Ex_Stage/ALU_Module/Msub_subALU_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<4> (Ex_Stage/ALU_Module/Msub_subALU_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<5> (Ex_Stage/ALU_Module/Msub_subALU_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<6> (Ex_Stage/ALU_Module/Msub_subALU_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<7> (Ex_Stage/ALU_Module/Msub_subALU_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<8> (Ex_Stage/ALU_Module/Msub_subALU_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<9> (Ex_Stage/ALU_Module/Msub_subALU_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<10> (Ex_Stage/ALU_Module/Msub_subALU_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<11> (Ex_Stage/ALU_Module/Msub_subALU_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<12> (Ex_Stage/ALU_Module/Msub_subALU_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<13> (Ex_Stage/ALU_Module/Msub_subALU_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<14> (Ex_Stage/ALU_Module/Msub_subALU_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<15> (Ex_Stage/ALU_Module/Msub_subALU_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<16> (Ex_Stage/ALU_Module/Msub_subALU_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<17> (Ex_Stage/ALU_Module/Msub_subALU_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<18> (Ex_Stage/ALU_Module/Msub_subALU_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<19> (Ex_Stage/ALU_Module/Msub_subALU_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Ex_Stage/ALU_Module/Msub_subALU_cy<20> (Ex_Stage/ALU_Module/Msub_subALU_cy<20>)
+     XORCY:CI->O           2   0.699   0.532  Ex_Stage/ALU_Module/Msub_subALU_xor<21> (Ex_Stage/ALU_Module/subALU<21>)
+     LUT2:I0->O            1   0.612   0.509  Ex_Stage/ALU_Module/early_zero208 (Ex_Stage/ALU_Module/early_zero208)
+     LUT4:I0->O            1   0.612   0.360  Ex_Stage/ALU_Module/early_zero218 (Ex_Stage/ALU_Module/early_zero218)
+     LUT4:I3->O            1   0.612   0.387  Ex_Stage/ALU_Module/early_zero248 (Ex_Stage/ALU_Module/early_zero248)
+     LUT4:I2->O            1   0.612   0.509  Ex_Stage/ALU_Module/early_zero748_SW0 (N125)
+     LUT4:I0->O            1   0.612   0.357  Ex_Stage/ALU_Module/early_zero748 (D_ALU_Zero_OBUF)
+     OBUF:I->O                 3.169          D_ALU_Zero_OBUF (D_ALU_Zero)
+    ----------------------------------------
+    Total                     18.689ns (12.935ns logic, 5.754ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.90 secs
+ 
+--> 
+
+Total memory usage is 4546648 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  104 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

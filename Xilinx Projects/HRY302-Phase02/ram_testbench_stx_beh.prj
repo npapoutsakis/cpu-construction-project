@@ -1,0 +1,2 @@
+vhdl isim_temp "RAM.vhd"
+vhdl isim_temp "ram_testbench.vhd"

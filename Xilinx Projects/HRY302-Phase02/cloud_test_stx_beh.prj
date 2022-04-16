@@ -1,0 +1,2 @@
+vhdl isim_temp "cloud.vhd"
+vhdl isim_temp "cloud_test.vhd"

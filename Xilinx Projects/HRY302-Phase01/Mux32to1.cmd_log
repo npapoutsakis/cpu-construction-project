@@ -1,0 +1,1 @@
+vhdtdtfi -prj HRY302-Phase01 -o C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase01/Mux32to1.vhi -module Mux32to1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Mux32to1.vhd 

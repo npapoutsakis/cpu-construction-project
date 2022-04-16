@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase02/IFSTAGE.xst" -ofn "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase02/IFSTAGE.syr" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/proc_sc_testbench_isim_beh.exe" -prj "C:/Users/Nick PC/Documents/VHDL/HRY302-Phase03/proc_sc_testbench_beh.prj" "work.proc_sc_testbench" 
