@@ -1,2 +1,0 @@
-vhdl isim_temp "Register32Bit.vhd"
-vhdl isim_temp "Register_TestBench.vhd"

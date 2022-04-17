@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase02/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase02/xst"
-elaborate
--ifn addition_module.prj
--ifmt mixed

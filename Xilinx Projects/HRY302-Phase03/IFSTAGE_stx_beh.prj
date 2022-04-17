@@ -1,5 +1,0 @@
-vhdl isim_temp "Register32Bit.vhd"
-vhdl isim_temp "plus4module.vhd"
-vhdl isim_temp "Mux2to1.vhd"
-vhdl isim_temp "addition_module.vhd"
-vhdl isim_temp "IFSTAGE.vhd"

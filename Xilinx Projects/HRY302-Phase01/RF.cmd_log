@@ -1,3 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase01/RF.xst" -ofn "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase01/RF.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 RF.ngc RF.ngd  
-map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o RF_map.ncd RF.ngd RF.pcf 

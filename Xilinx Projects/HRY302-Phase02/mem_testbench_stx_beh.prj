@@ -1,3 +1,0 @@
-vhdl isim_temp "RAM.vhd"
-vhdl isim_temp "MEMSTAGE.vhd"
-vhdl isim_temp "mem_testbench.vhd"

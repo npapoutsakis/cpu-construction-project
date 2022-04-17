@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase03/xst"
-elaborate
--ifn CONTROL.prj
--ifmt mixed

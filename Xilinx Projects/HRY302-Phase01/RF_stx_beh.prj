@@ -1,5 +1,0 @@
-vhdl isim_temp "Array_Variable.vhd"
-vhdl isim_temp "Register32Bit.vhd"
-vhdl isim_temp "Mux32to1.vhd"
-vhdl isim_temp "Decoder5to32.vhd"
-vhdl isim_temp "RF.vhd"

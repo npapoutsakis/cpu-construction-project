@@ -1,5 +1,0 @@
-vhdl work "Register32Bit.vhd"
-vhdl work "plus4module.vhd"
-vhdl work "Mux2to1.vhd"
-vhdl work "addition_module.vhd"
-vhdl work "IFSTAGE.vhd"

@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase01/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Nick-PC/Documents/VHDL/HRY302-Phase01/xst"
-elaborate
--ifn Decoder5to32.prj
--ifmt mixed

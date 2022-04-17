@@ -1,3 +1,0 @@
-vhdl isim_temp "Array_Variable.vhd"
-vhdl isim_temp "Mux32to1.vhd"
-vhdl isim_temp "Mux32to_TestBench.vhd"
